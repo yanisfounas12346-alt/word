@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CV Flash — Crée un CV professionnel gratuit en 3 minutes</title>
+<meta name="description" content="Crée un CV clair, moderne et adapté aux candidatures en France. Sans inscription, sans abonnement, sans publicité. Exporte en PDF.">
+<style>
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:#192239;background:#f4f6fb}*{box-sizing:border-box}body{margin:0}button,input,textarea{font:inherit}button{cursor:pointer}
+header{background:#101c3a;color:white;padding:22px max(22px,calc((100vw - 1160px)/2));display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-size:24px;font-weight:900;letter-spacing:-1px}.brand span{color:#90e0d3}.topnote{font-size:12px;color:#c9d3e8}main{max-width:1160px;margin:auto;padding:35px 20px 65px}
+.hero h1{font-size:clamp(30px,4.5vw,52px);letter-spacing:-1.8px;line-height:1.1;margin:0 0 12px}.hero p{color:#576176;max-width:680px;line-height:1.6}.tag{display:inline-block;background:#d3f5eb;color:#176450;padding:7px 12px;border-radius:999px;font-size:12px;font-weight:800;margin-bottom:15px}
+.workspace{display:grid;grid-template-columns:minmax(300px,440px) minmax(320px,1fr);gap:25px;align-items:start;margin-top:30px}.panel{background:white;border:1px solid #e1e7ef;border-radius:20px;box-shadow:0 12px 34px #1d365010;padding:25px}.panel h2{margin:0 0 5px;font-size:21px}.sub{font-size:13px;color:#6c7688;margin:0 0 20px}
+label{display:block;font-size:12px;font-weight:800;color:#4f5d70;margin:17px 0 7px}input,textarea{display:block;width:100%;border:1px solid #dce3ed;border-radius:11px;padding:11px 12px;outline:none;background:#fcfdff;color:#17213c}input:focus,textarea:focus{border-color:#497be8;box-shadow:0 0 0 3px #497be820}textarea{resize:vertical;min-height:76px}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.btn{border:0;border-radius:11px;padding:12px 17px;font-weight:800;background:#e9eef8;color:#26334f}.btn.primary{background:#2c59d9;color:white}.btn:hover{filter:brightness(.95)}.previewWrap{position:sticky;top:14px}.previewTop{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px}.previewTop strong{font-size:14px}.cv{background:white;border:1px solid #dbe2ed;box-shadow:0 15px 40px #18223920;min-height:730px;padding:42px 46px;max-width:700px}.cv .name{font-size:35px;line-height:1.05;letter-spacing:-1.5px;font-weight:900;color:#16213a}.cv .role{font-size:15px;color:#3067cb;font-weight:700;margin:10px 0}.cv .contacts{font-size:11px;color:#667184;line-height:1.6;word-break:break-word;padding-bottom:22px;border-bottom:2px solid #25395f}.cv section{margin-top:23px}.cv h3{font-size:12px;text-transform:uppercase;letter-spacing:1.4px;border-bottom:1px solid #e3e8f1;padding-bottom:9px;margin:0 0 9px;color:#244ca3}.cv .bodycopy{white-space:pre-line;line-height:1.6;font-size:12px;color:#334056}.cv.classic .name{color:#183a45}.cv.classic .role,.cv.classic h3{color:#187d78}.cv.classic .contacts{border-bottom-color:#187d78}
+.support{margin-top:28px;background:#eaf0ff;border:1px solid #ccdafd;padding:23px;border-radius:18px}.support h2{margin:0 0 7px;font-size:18px}.support p{color:#43526e;font-size:13px;line-height:1.6}.support small{display:block;color:#53637c;margin-top:10px}.privacy{font-size:12px;color:#6c7486;margin-top:22px;line-height:1.5}
+@media(max-width:850px){.workspace{grid-template-columns:1fr}.previewWrap{position:static}.cv{padding:24px;min-height:570px}.panel{padding:19px}}@media print{header,.hero,.editor,.previewTop,.support,.privacy{display:none!important}body,main,.workspace,.previewWrap{background:white;margin:0;padding:0;display:block;max-width:none} .cv{border:none;box-shadow:none;min-height:auto;width:100%;max-width:none;padding:10mm 11mm} @page{size:A4;margin:5mm}}
+</style></head>
+<body><header><div class="brand">CV<span>Flash</span></div><span class="topnote">100 % gratuit · Sans compte · Données sur ton appareil</span></header>
+<main><div class="hero"><span class="tag">OUTIL GRATUIT</span><h1>Un CV professionnel<br>en quelques minutes.</h1><p>Remplis les champs, visualise ton CV instantanément et utilise « Imprimer / PDF » pour l'enregistrer en PDF. Aucune inscription et aucune donnée envoyée à un serveur.</p></div>
+<div class="workspace"><div class="panel editor">
+<h2>Personnalise ton CV</h2><p class="sub">Modifie les exemples ci-dessous avec tes informations.</p>
+<div class="two"><div><label for="first">Prénom</label><input id="first" value="Camille"></div><div><label for="last">Nom</label><input id="last" value="Martin"></div></div>
+<label for="job">Poste recherché / titre</label><input id="job" value="Assistant administratif">
+<label for="email">Email</label><input id="email" type="email" value="camille.exemple@email.fr">
+<label for="phone">Téléphone / ville</label><input id="phone" value="06 00 00 00 00 · Marseille">
+<label for="summary">Présentation (2 à 4 phrases)</label><textarea id="summary">Organisé(e) et rigoureux(se), j'aime travailler en équipe et trouver des solutions concrètes. Je souhaite apporter mon énergie et mon sens du service à une nouvelle équipe.</textarea>
+<label for="exp">Expériences (une ligne par information)</label><textarea id="exp">2024–2026 — Assistant administratif · Entreprise ABC
+Accueil, suivi des dossiers, gestion des plannings et coordination des équipes.</textarea>
+<label for="education">Formations</label><textarea id="education">2023 — BTS Gestion de la PME
+Lycée Exemple, Marseille</textarea>
+<label for="skills">Compétences</label><textarea id="skills">Organisation · Word · Excel · Relation client · Rigueur · Travail en équipe</textarea>
+<div class="actions"><button class="btn primary" id="pdf" type="button">↓ Imprimer / PDF</button><button class="btn" id="theme" type="button">Changer de style</button><button class="btn" id="reset" type="button">Effacer mes données</button></div>
+</div>
+<div class="previewWrap"><div class="previewTop"><strong>Aperçu de ton CV</strong><span style="font-size:12px;color:#667184">Format A4 · Export PDF</span></div><article id="cv" class="cv">
+<div class="name" id="pname"></div><div class="role" id="prole"></div><div class="contacts" id="pcontacts"></div>
+<section><h3>Profil</h3><div class="bodycopy" id="psummary"></div></section>
+<section><h3>Expérience professionnelle</h3><div class="bodycopy" id="pexp"></div></section>
+<section><h3>Formation</h3><div class="bodycopy" id="peducation"></div></section>
+<section><h3>Compétences</h3><div class="bodycopy" id="pskills"></div></section>
+</article></div></div>
+<div class="support"><h2>☕ Tu aimes cet outil gratuit ?</h2><p>CVFlash est accessible gratuitement à tous. Tu peux soutenir sa création avec une contribution volontaire de 10 € via PayPal : clique ci-dessous, puis envoie à l'adresse indiquée. Cela n'est ni obligatoire ni un achat.</p>
+<button type="button" class="btn primary" id="donate">Copier l'adresse PayPal et ouvrir PayPal</button><small id="donateMsg">Contribuer est facultatif. Le CV reste entièrement gratuit.</small></div>
+<p class="privacy">Confidentialité : tout se passe dans ton navigateur. Tes données ne sont envoyées à aucun serveur par cet outil. Les champs sont enregistrés uniquement dans ce navigateur pour retrouver ton brouillon. Utilise « Effacer mes données » pour les supprimer.</p>
+</main><script>
+const ids=['first','last','job','email','phone','summary','exp','education','skills'];const $=id=>document.getElementById(id);const demo=Object.fromEntries(ids.map(k=>[k,$(k).value]));
+function render(){const v=k=>$(k).value.trim();$('pname').textContent=(v('first')+' '+v('last')).trim()||'Prénom Nom';$('prole').textContent=v('job')||'Poste recherché';$('pcontacts').textContent=[v('email'),v('phone')].filter(Boolean).join('  •  ');['summary','exp','education','skills'].forEach(k=>{$('p'+k).textContent=v(k)||'À compléter'})}
+try{const saved=JSON.parse(localStorage.getItem('cvflash-draft')||'{}');ids.forEach(k=>{if(typeof saved[k]==='string')$(k).value=saved[k]})}catch(e){}
+ids.forEach(k=>$(k).addEventListener('input',()=>{render();try{localStorage.setItem('cvflash-draft',JSON.stringify(Object.fromEntries(ids.map(x=>[x,$(x).value]))))}catch(e){}}));
+$('pdf').addEventListener('click',()=>window.print());$('theme').addEventListener('click',()=>$('cv').classList.toggle('classic'));
+$('reset').addEventListener('click',()=>{if(confirm('Effacer les informations de ton CV sur cet appareil ?')){ids.forEach(k=>$(k).value='');try{localStorage.removeItem('cvflash-draft')}catch(e){}render()}});
+$('donate').addEventListener('click',async()=>{const email='yanis.founas12346@gmail.com';try{await navigator.clipboard.writeText(email);$('donateMsg').textContent='Adresse copiée : '+email+' — entre-la dans PayPal pour envoyer ta contribution.'}catch(e){$('donateMsg').textContent='Adresse PayPal : '+email}window.open('https://www.paypal.com/fr/home','_blank','noopener')});
+render();
+</script></body></html>
