@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CV Flash — Crée un CV professionnel gratuit en 3 minutes</title>
-<meta name="description" content="Crée un CV clair, moderne et adapté aux candidatures en France. Sans inscription, sans abonnement, sans publicité. Exporte en PDF.">
+<title>CV gratuit PDF sans inscription — CVFlash et lettre de motivation</title>
+<link rel="canonical" href="https://cvflash-gratuit-yanisfounas12346-1342.vercel.app/"><meta name="robots" content="index, follow"><meta property="og:title" content="CVFlash — CV et lettre de motivation gratuits"><meta property="og:url" content="https://cvflash-gratuit-yanisfounas12346-1342.vercel.app/"><script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"CVFlash","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}</script>
+<meta name="description" content="Crée un CV professionnel en PDF sans inscription. Prépare aussi une lettre de motivation gratuite adaptée à un poste en France.">
 <style>
 :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:#192239;background:#f4f6fb}*{box-sizing:border-box}body{margin:0}button,input,textarea{font:inherit}button{cursor:pointer}
 header{background:#101c3a;color:white;padding:22px max(22px,calc((100vw - 1160px)/2));display:flex;align-items:center;justify-content:space-between;gap:20px}
@@ -15,7 +16,7 @@ label{display:block;font-size:12px;font-weight:800;color:#4f5d70;margin:17px 0 7
 </style></head>
 <body><header><div class="brand">CV<span>Flash</span></div><span class="topnote">100 % gratuit · Sans compte · Données sur ton appareil</span></header>
 <main><div class="hero"><span class="tag">OUTIL GRATUIT</span><h1>Un CV professionnel<br>en quelques minutes.</h1><p>Remplis les champs, visualise ton CV instantanément et utilise « Imprimer / PDF » pour l'enregistrer en PDF. Aucune inscription et aucune donnée envoyée à un serveur.</p></div>
-<div class="workspace"><div class="panel editor">
+<div class="support" style="background:#eafaf7;border-color:#bbeadd"><h2>✉️ Nouveau : lettre de motivation gratuite</h2><p>Tu as déjà ton CV ? Prépare une lettre personnalisable en 2 minutes, avec impression ou PDF.</p><a class="btn primary" style="display:inline-block;text-decoration:none" href="/lettre.html">Créer ma lettre de motivation →</a></div><div class="workspace"><div class="panel editor">
 <h2>Personnalise ton CV</h2><p class="sub">Modifie les exemples ci-dessous avec tes informations.</p>
 <div class="two"><div><label for="first">Prénom</label><input id="first" value="Camille"></div><div><label for="last">Nom</label><input id="last" value="Martin"></div></div>
 <label for="job">Poste recherché / titre</label><input id="job" value="Assistant administratif">
@@ -38,7 +39,7 @@ Lycée Exemple, Marseille</textarea>
 </article></div></div>
 <div class="support"><h2>☕ Tu aimes cet outil gratuit ?</h2><p>CVFlash est accessible gratuitement à tous. Tu peux soutenir sa création avec une contribution volontaire de 10 € via PayPal : clique ci-dessous, puis envoie à l'adresse indiquée. Cela n'est ni obligatoire ni un achat.</p>
 <button type="button" class="btn primary" id="donate">Copier l'adresse PayPal et ouvrir PayPal</button><small id="donateMsg">Contribuer est facultatif. Le CV reste entièrement gratuit.</small></div>
-<p class="privacy">Confidentialité : tout se passe dans ton navigateur. Tes données ne sont envoyées à aucun serveur par cet outil. Les champs sont enregistrés uniquement dans ce navigateur pour retrouver ton brouillon. Utilise « Effacer mes données » pour les supprimer.</p>
+<div class="support" style="background:#fff;border-color:#e1e7ef"><h2>Questions fréquentes</h2><p><strong>Ce CV est-il vraiment gratuit ?</strong> Oui, export PDF sans paiement, sans compte et sans abonnement.</p><p><strong>Comment télécharger mon CV en PDF ?</strong> Clique sur « Imprimer / PDF », puis « Enregistrer en PDF » dans ton navigateur.</p><p><strong>Mes données sont-elles privées ?</strong> Le brouillon est enregistré localement dans ton navigateur et effaçable à tout moment.</p><p><strong>Comment écrire une lettre de motivation sans expérience ?</strong> Utilise notre <a href="/lettre.html">générateur gratuit</a> ou nos <a href="/exemples.html">exemples de candidature</a>.</p></div><p class="privacy">Confidentialité : tout se passe dans ton navigateur. Tes données ne sont envoyées à aucun serveur par cet outil. Les champs sont enregistrés uniquement dans ce navigateur pour retrouver ton brouillon. Utilise « Effacer mes données » pour les supprimer.</p>
 </main><script>
 const ids=['first','last','job','email','phone','summary','exp','education','skills'];const $=id=>document.getElementById(id);const demo=Object.fromEntries(ids.map(k=>[k,$(k).value]));
 function render(){const v=k=>$(k).value.trim();$('pname').textContent=(v('first')+' '+v('last')).trim()||'Prénom Nom';$('prole').textContent=v('job')||'Poste recherché';$('pcontacts').textContent=[v('email'),v('phone')].filter(Boolean).join('  •  ');['summary','exp','education','skills'].forEach(k=>{$('p'+k).textContent=v(k)||'À compléter'})}
